@@ -1,0 +1,146 @@
+.index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+.index-left {
+  width: 45%;
+}
+.index-left img {
+  width: 348px;
+  height: 473px;
+  transition: 1s;
+}
+.index-left img:hover {
+  transform: scale(1.2, 1.2);
+}
+.index-right {
+  width: 55%;
+}
+.index-right h1,
+.metrics-left h1 {
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+}
+.index-right p,
+.metrics-left p {
+  color: #696871;
+  font-size: 20px;
+  width: 70%;
+  margin: 30px 0;
+  line-height: 30px;
+}
+.index-right button,
+.metrics-left button {
+  background: transparent;
+  border: none;
+  color: #5454d4;
+  font-size: 17px;
+  transition: 1s;
+}
+.index-right button:hover,
+.metrics-left button:hover {
+  color: #c31a12;
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+/* ------ metrics ------ */
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+.metrics-left,
+.metrics-right {
+  width: 50%;
+}
+.metrics-right img {
+  width: 346px;
+  height: 474px;
+  margin-left: 40px;
+  transition: 1s;
+}
+.metrics-right img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+@media (max-width: 880px) {
+  .index,
+  .metrics {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .index {
+    margin-bottom: 20px;
+  }
+  .index-left {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .index-left img {
+    display: block;
+    margin: 0 auto;
+  }
+  .index-right {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .index-right p,
+  .metrics-left p {
+    color: #696871;
+    font-size: 20px;
+    width: 70%;
+    margin: 30px auto;
+    line-height: 30px;
+  }
+  .metrics-left,
+  .metrics-right {
+    width: 100%;
+    text-align: center;
+  }
+  .metrics {
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+  }
+  .metrics-right img {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .index-left {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .index-left img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 35px;
+  }
+  .metrics-left button {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .metrics-right img {
+    width: 80%;
+    height: auto;
+  }
+  .index-right p,
+  .metrics-left p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .index-right h1 {
+    font-size: 35px;
+  }
+}
